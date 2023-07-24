@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>
+        Two way Binding in JavaScript
+    </title>
+</head>
+<body>
+    
+    <form action="">
+        <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" data-two-way-bind="name">
+            <small data-two-way-bind="name">Example text</small>
+            <hr />
+        </div>
+    
+        <div class="form-field">
+            <label for="surname">Surname</label>
+            <input type="text" data-two-way-bind="surname">
+            <small data-two-way-bind="surname">Example text</small>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
